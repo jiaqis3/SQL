@@ -1,0 +1,117 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 mysql -d root -p\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \CocoaLigature1 CREATE TABLE Position_1(\
+Security_Name TEXT,\
+Security_ID TEXT,\
+Ticker TEXT,\
+Shares_or_Par FLOAT,\
+Market_Value FLOAT,\
+Pecent_of_Total_Market_Value FLOAT,\
+Coupon_Rate FLOAT,\
+Maturity_or_Expiration_Date DATE,\
+Opration_Date DATE,\
+Portfolio_Name TEXT\
+);
+\f0\fs22 \cf2 \CocoaLigature0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\
+
+\f1\fs24 \cf0 \CocoaLigature1 load data local infile '/Users/kalaki7up/Desktop/summer\\ project/PJ2-SQL/Position_1.txt' into table Position_1\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0     -> fields terminated by '\\t'\
+    -> lines terminated by '\\r';\
+\
+\
+CREATE TABLE Marketinfo_1(\
+Security_Name TEXT,\
+Security_ID TEXT,\
+MARKET_SECTOR_DES TEXT,\
+PARSEKYABLE_DES TEXT,\
+SECURITY_TYP TEXT,\
+ISSUER_ TEXT,\
+IS_SUBORDINATED TEXT,\
+SECURITY_DES TEXT,\
+DUR_ADJ_MID FLOAT,\
+AS_OF_DATE TEXT,\
+INDUSTRY_SECTOR TEXT,\
+FLOATER TEXT,\
+MTG_DEAL_TYP TEXT,\
+MATURITY TEXT,\
+RTG_SP_OUTLOOK TEXT,\
+RTG_MDY_OUTLOOK TEXT,\
+RTG_FITCH_OUTLOOK TEXT,\
+MTG_WAL FLOAT,\
+KEY_RATE_DUR_3MO FLOAT,\
+KEY_RATE_DUR_6MO FLOAT,\
+KEY_RATE_DUR_1YR FLOAT,\
+KEY_RATE_DUR_2YR FLOAT,\
+KEY_RATE_DUR_3YR FLOAT,\
+KEY_RATE_DUR_4YR FLOAT,\
+KEY_RATE_DUR_5YR FLOAT,\
+KEY_RATE_DUR_6YR FLOAT,\
+KEY_RATE_DUR_7YR FLOAT,\
+KEY_RATE_DUR_8YR FLOAT,\
+KEY_RATE_DUR_9YR FLOAT,\
+KEY_RATE_DUR_10YR FLOAT,\
+KEY_RATE_DUR_15YR FLOAT,\
+KEY_RATE_DUR_20YR FLOAT,\
+KEY_RATE_DUR_25YR FLOAT,\
+KEY_RATE_DUR_30YR FLOAT,\
+RTG_FITCH TEXT,\
+RTG_SP TEXT,\
+RTG_MOODY TEXT,\
+YLD_YTM_MID FLOAT,\
+YLD_CHG_NET_1D_NO_BP FLOAT,\
+YLD_CHG_NET_1M FLOAT,\
+DAY_CNT_DES TEXT,\
+NXT_CPN_DT TEXT,\
+FIRST_CPN_DT TEXT,\
+CPN FLOAT,\
+CPN_FREQ TEXT,\
+ADJUSTED_MATURITY TEXT,\
+ULT_PARENT_TICKER_EXCHANGE TEXT,\
+FFO_PER_TOT_DEBT FLOAT,\
+TOT_DEBT_TO_EBITDA FLOAT,\
+CFO_TO_TOT_DEBT FLOAT,\
+OAS_SPREAD_MID FLOAT,\
+CALLABLE TEXT,\
+BOND_TO_EQY_TICKER TEXT,\
+GUARANTOR_NAME TEXT,\
+GUARANTOR_TYPE TEXT,\
+GUARANTOR TEXT,\
+GUARANTOR_EQY_TICKER TEXT,\
+INDUSTRY_GROUP_INDEX TEXT,\
+INDUSTRY_GROUP TEXT,\
+INDUSTRY_TOT_DEBT_TO_EBITDA FLOAT,\
+PX_BID FLOAT,\
+PX_ASK FLOAT,\
+PX_LAST FLOAT,\
+BID_ASK_SPREAD FLOAT,\
+BID_ASK_SPREAD_RATIO FLOAT,\
+VOLUME_AVG_30D FLOAT,\
+VOLUME_AVG_3M FLOAT,\
+BID_SIZE TEXT,\
+TIME_GRANULARITY_FOR_MD TEXT,\
+COLLAT_TYP TEXT,\
+RTG_FITCH_LT_ISSUER_DEFAULT TEXT,\
+RTG_FITCH_ST_ISSUER_DEFAULT TEXT,\
+RTG_MDY_ISSUER TEXT,\
+RTG_SP_LT_LC_ISSUER_CREDIT TEXT,\
+RTG_ISSUER_CUR_REVISION TEXT,\
+TIME_STAMP TEXT\
+);\
+\
+\
+load data local infile '/Users/kalaki7up/Desktop/summer\\ project/PJ2-SQL/Marketinfo_1.txt' into table Marketinfo_1\
+    -> fields terminated by '\\t'\
+    -> lines terminated by '\\r';}
